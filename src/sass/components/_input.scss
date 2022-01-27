@@ -1,0 +1,18 @@
+.input {
+  width: 30rem;
+  input {
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.6rem;
+    outline: none;
+    border: none;
+    background-color: var(--color-whitish);
+    border-radius: 4px;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  &--full {
+    width: 100%;
+  }
+}

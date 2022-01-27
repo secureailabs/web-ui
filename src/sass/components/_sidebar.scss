@@ -1,0 +1,44 @@
+.sidebar {
+  grid-column: sidebar-start/sidebar-end;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    width: 15rem;
+    height: auto;
+    padding-left: 3rem;
+    padding-top: 1.6rem;
+  }
+  &__primary {
+    padding-top: 5rem;
+  }
+  &__secondary {
+    margin-top: auto;
+  }
+}
+
+.sidebar-link {
+  display: flex;
+  padding: 1.5rem 3rem;
+  align-items: center;
+  transition-duration: 0.5s;
+  &:hover {
+    background-color: rgba(243, 115, 35, 0.1);
+  }
+  &--selected {
+    background-color: rgba(243, 115, 35, 0.1);
+    &:hover {
+      background-color: rgba(243, 115, 35, 0.2);
+    }
+  }
+  cursor: pointer;
+  &__icon {
+    font-size: 2rem;
+
+    color: var(--color-grey);
+    &--selected {
+      color: var(--color-primary);
+    }
+    margin-right: 1.3rem;
+  }
+}

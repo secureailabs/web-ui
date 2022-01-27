@@ -1,0 +1,89 @@
+////////////////////////////////////
+// BASE
+
+////////////////////////////////////
+// DEFINING CSS VARIABLES
+// Allows colors to be dynamicaly changed and more easily referenced
+// Must be defined in root
+
+:root {
+  --color-white: white;
+  --color-black: black;
+
+  --color-primary: #f37323;
+
+  --color-grey: #869ea6;
+
+  --color-whitish: #f7fbfc;
+  --color-blackish: #00000cc;
+  --color-backgroundWhite: #d8e4e8;
+  --leading-3: 1.2rem;
+  --leading-4: 1.6rem;
+  --leading-5: 2rem;
+  --leading-6: 2.4rem;
+  --leading-7: 2.8rem;
+  --leading-8: 3.2rem;
+  --leading-9: 3.6rem;
+  --leading-10: 4rem;
+  --leading-11: 7rem;
+
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  --text-xxs: 1rem;
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+}
+
+///////////////////////////////////
+// CLEANING DEFAULT BROWSER VALUES
+// Now all elements have a predictable margin and padding of 0
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+//////////////////////////////////
+// Setting default HTML values
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  // Setting the font-size to 62.5% so that rem is now equal to 10px (easier to multiply)
+  font-size: 62.5%;
+  // Shrinking global font-size (shrinks almost all elements), if device width is tab-small (check
+  @include respond(phone) {
+    font-size: 52.5%;
+  }
+}
+
+h1 {
+  color: red;
+}
+//////////////////////////////////
+// SETTING CSS PROPRETIES OF DOM
+// All react components are found in side the #root div
+
+#root {
+  min-height: 100vh;
+  // Setting default font color to css variable
+  // All elements will be contained inside a grid
+  // Grid has two large columns on the outside and 8 evenly sized columns in the middle
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: var(--color-gray-100);
+}

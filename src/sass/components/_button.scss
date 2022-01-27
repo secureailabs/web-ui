@@ -1,0 +1,29 @@
+.button {
+  padding: 1.8rem 4.8rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    &:hover {
+      color: var(--color-primary);
+      background-color: var(--color-white);
+    }
+  }
+  &--secondary {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+  &--full {
+    width: 100%;
+  }
+}

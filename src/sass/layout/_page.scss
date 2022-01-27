@@ -1,0 +1,12 @@
+.page {
+  background-color: var(--color-whitish);
+  &--full {
+    grid-column: full-start/full-end;
+  }
+  &--center {
+    grid-column: center-start/center-end;
+  }
+  &--padding {
+    padding: 4rem;
+  }
+}

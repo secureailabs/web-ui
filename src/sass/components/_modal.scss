@@ -1,0 +1,25 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+  width: 66.3rem;
+  padding: 4rem 3rem;
+  &__exit {
+    color: #ff0000;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    cursor: pointer;
+  }
+}
+
+.modal-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+}

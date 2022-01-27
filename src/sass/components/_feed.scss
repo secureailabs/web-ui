@@ -1,0 +1,22 @@
+.feed {
+}
+
+.feed-item {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem;
+  &__image {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1.6rem;
+  }
+  &__content {
+    padding-right: 3rem;
+    width: 80%;
+  }
+  &__date {
+    margin-left: auto;
+  }
+}
