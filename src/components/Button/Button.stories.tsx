@@ -29,16 +29,16 @@ export const FullWidth = Template.bind({});
 
 Primary.args = {
   children: 'Primary',
-  type: 'primary',
+  button_type: 'primary',
 };
 
 Secondary.args = {
   children: 'Secondary',
-  type: 'secondary',
+  button_type: 'secondary',
 };
 
 FullWidth.args = {
   children: 'Full Width',
-  type: 'primary',
+  button_type: 'primary',
   full: true,
 };

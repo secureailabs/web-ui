@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +16,14 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
+    "sourceMap": true,
+    "outDir": "dist",
+    "typeRoots": ["index.d.ts", "node_modules/@types"],
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ],
     "paths": {
       "@pages/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],

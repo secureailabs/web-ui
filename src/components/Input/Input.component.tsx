@@ -4,7 +4,15 @@ import Text from '@components/Text';
 
 import type TInput from './Input.types';
 
-const Input: React.FC<TInput> = ({ label, placeholder, full, onChange }) => {
+const Input: React.FC<TInput> = ({
+  label,
+  placeholder,
+  full,
+  onChange,
+  register,
+  name,
+  type = 'text',
+}) => {
   return (
     <div className={`input ${full ? 'input--full' : ''}`}>
       {label ? (
@@ -14,7 +22,12 @@ const Input: React.FC<TInput> = ({ label, placeholder, full, onChange }) => {
       ) : (
         <></>
       )}
-      <input placeholder={placeholder} onChange={onChange} />
+      <input
+        {...register(name)}
+        placeholder={placeholder}
+        onChange={onChange}
+        type={type}
+      />
     </div>
   );
 };

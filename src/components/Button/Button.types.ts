@@ -1,6 +1,7 @@
 type TButton = {
   children: string;
-  type: 'primary' | 'secondary';
+  button_type: 'primary' | 'secondary';
+  type?: 'button' | 'submit' | 'reset';
   full: boolean;
 };
 
