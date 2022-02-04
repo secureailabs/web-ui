@@ -23,5 +23,6 @@ jobs:
       - run: yarn install
       - run: yarn ttsc
       - run: cp package.json dist
+      - run: cp node_modules dist
       - run: cd dist
       - run: yarn run semantic-release
