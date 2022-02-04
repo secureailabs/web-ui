@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - env:
+        env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
       - run: yarn install
       - run: yarn run semantic-release
