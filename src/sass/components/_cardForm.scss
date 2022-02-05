@@ -1,0 +1,21 @@
+.cardForm {
+  border-radius: 4px;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 20px 0px #0000000A;
+  width: 48rem;
+  padding: 4rem 3rem;
+  display: grid;
+  justify-items: center;
+
+  &__image {
+    left: 44.1%;
+    right: 44.1%;
+    top: 27.34%;
+    bottom: 67.58%;
+    width: 35%;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
