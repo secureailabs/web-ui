@@ -1,7 +1,6 @@
 {
-  "name": "@sail/web-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@secureailabs/web-ui",
+  "repository": "git://github.com/secureailabs/web-ui.git",
   "dependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
@@ -49,7 +48,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "ttsc && cp package.json dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -66,6 +65,9 @@
         }
       }
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
