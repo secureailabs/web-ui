@@ -53,7 +53,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postversion": "cp -r package.json .. && cp -r npm-shrinkwrap.json .."
   },
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"],
