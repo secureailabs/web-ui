@@ -22,4 +22,5 @@ jobs:
           node-version: 16
       - run: yarn install
       - run: yarn ttsc
+      - run: cp package.json dist
       - run: npm run semantic-release
