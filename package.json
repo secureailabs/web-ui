@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.2",
     "@semantic-release/npm": "^9.0.0",
     "@semantic-release/release-notes-generator": "^10.0.3",
@@ -57,10 +58,15 @@
     "postversion": "cp -r package.json .. && cp -r npm-shrinkwrap.json .."
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"],
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
     "overrides": [
       {
-        "files": ["**/*.stories.*"],
+        "files": [
+          "**/*.stories.*"
+        ],
         "rules": {
           "import/no-anonymous-default-export": "off"
         }
@@ -68,7 +74,11 @@
     ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -87,10 +97,10 @@
     "@storybook/react": "^6.4.13",
     "sass": "^1.49.0",
     "storybook-addon-sass-postcss": "^0.1.0",
-    "webpack": "^5.66.0",
     "tsconfig-paths": "^3.9.0",
     "ttypescript": "^1.5.12",
     "typescript": "^4.2.4",
-    "typescript-transform-paths": "^2.2.4"
+    "typescript-transform-paths": "^2.2.4",
+    "webpack": "^5.66.0"
   }
 }
