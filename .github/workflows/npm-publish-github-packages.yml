@@ -22,5 +22,5 @@ jobs:
           node-version: 16
       - run: yarn install
       - run: yarn build
-      - run: echo //npm.pkg.github.com/:_authToken=${GH_TOKEN} > .npmrc
+      - run: echo //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN} > .npmrc
       - run: npm run semantic-release
