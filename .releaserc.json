@@ -12,7 +12,7 @@
     [
       "@semantic-release/github",
       {
-        "assets": ["package.json", "npm-shrinkwrap.json"]
+        "assets": ["package.json"]
       }
     ]
   ]
