@@ -6,13 +6,14 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "dist"
+        "npmPublish": false,
+        "tarballDir": "dist"
       }
     ],
     [
       "@semantic-release/github",
       {
-        "assets": ["package.json"]
+        "assets": "dist/*.tgz"
       }
     ]
   ]
