@@ -16,4 +16,5 @@ Simple.args = {
   label: 'test',
   onChange: (e) => {},
   placeholder: 'test',
+  register: () => {}
 };

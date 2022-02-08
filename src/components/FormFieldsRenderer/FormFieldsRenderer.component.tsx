@@ -14,6 +14,7 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
   formState,
   full,
   description,
+  children,
   button_text,
 }) => {
   return (
@@ -65,9 +66,9 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
             );
         }
       })}
-
+      {children}
       <Button full={true} button_type="primary" type="submit">
-        Request Dataset Access
+        {button_text}
       </Button>
     </>
   );
