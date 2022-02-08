@@ -1,6 +1,5 @@
+import { ReactElement } from 'react';
 import { FieldValues, FormState, UseFormRegister } from 'react-hook-form';
-
-import TInput from '@components/Input/Input.types';
 
 export type TFormFieldsRenderer = {
   fields: Record<
@@ -16,6 +15,8 @@ export type TFormFieldsRenderer = {
   formState: FormState<any>;
   description?: string;
   button_text: string;
+
+  children?: ReactElement;
 
   full?: boolean;
 };

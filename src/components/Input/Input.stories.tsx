@@ -15,4 +15,5 @@ export const Simple = Template.bind({});
 Simple.args = {
   label: 'test',
   placeholder: 'test',
+  register: () => {}
 };
