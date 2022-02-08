@@ -14,6 +14,5 @@ const Template: Story<TInput> = (args) => <Input {...args} />;
 export const Simple = Template.bind({});
 Simple.args = {
   label: 'test',
-  onChange: (e) => {},
   placeholder: 'test',
 };
