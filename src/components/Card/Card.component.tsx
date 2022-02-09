@@ -9,22 +9,32 @@ const Card: React.FC<TCard> = ({
   primaryText,
   secondaryText,
   secondaryTextOnClick = () => {},
+  containerHeight,
+  widthMaxContent,
 }) => {
   return (
-    <div className="card">
+    <div
+      className={`card ${containerHeight ? 'card--container-height' : ''} ${
+        widthMaxContent ? 'card--width-max-content' : ''
+      }`}
+    >
       {primaryText || secondaryText ? (
         <div className="card__top">
-          <Text lineHeight={4} fontSize="1.6rem" fontWeight={600}>
-            Feeds
+          <Text lineHeight={4} fontSize="1.5rem" fontWeight={600}>
+            {primaryText}
           </Text>
-          <Text
-            lineHeight={4}
-            color="primary"
-            fontSize="1.2rem"
-            fontWeight={500}
-          >
-            Show all
-          </Text>
+          {secondaryText ? (
+            <Text
+              lineHeight={4}
+              color="primary"
+              fontSize="1.2rem"
+              fontWeight={500}
+            >
+              {secondaryText}
+            </Text>
+          ) : (
+            <></>
+          )}
         </div>
       ) : (
         <></>

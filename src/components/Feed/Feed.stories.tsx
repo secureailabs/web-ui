@@ -24,6 +24,8 @@ const Template: ComponentStory<typeof Feed> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
+  title: 'Feed',
+  secondary: 'Show all',
   feed: [
     {
       title:

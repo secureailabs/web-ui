@@ -19,7 +19,7 @@ export default {
 function NonEmptyCardForm(args: TCardForm): ReactElement {
   const { handleSubmit, register, formState } = useForm();
   return (
-    <Page pageType="center">
+    <Page pageType="full">
       <CardForm {...args}>
         <>
           <form className="form">
@@ -75,7 +75,10 @@ function NonEmptyCardForm(args: TCardForm): ReactElement {
             Don&apos;t have an account?&nbsp;&nbsp;
             <a
               href="./signup"
-              style={{ color: 'var(--color-primary)', textDecoration: 'None' }}
+              style={{
+                color: 'var(--color-primary)',
+                textDecoration: 'None',
+              }}
             >
               Signup
             </a>

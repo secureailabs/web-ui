@@ -1,5 +1,6 @@
 .page {
   background-color: var(--color-whitish);
+  // background-color: #f7fbfc;
   &--full {
     grid-column: full-start/full-end;
   }

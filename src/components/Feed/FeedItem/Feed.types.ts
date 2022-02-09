@@ -2,7 +2,7 @@ type TFeed = {
   title: string;
   description: string;
   date: Date;
-  image: string;
+  image?: string;
 };
 
 export default TFeed;

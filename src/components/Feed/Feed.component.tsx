@@ -4,13 +4,17 @@ import FeedItem from './FeedItem';
 import Card from '@components/Card';
 import TFeed from './Feed.types';
 
-const Feed: React.FC<TFeed> = ({ feed }) => {
+const Feed: React.FC<TFeed> = ({ feed, title, secondary, containerHeight }) => {
   return (
-    <Card primaryText="Feeds" secondaryText="Show all">
+    <Card
+      primaryText={title}
+      secondaryText={secondary}
+      containerHeight={containerHeight}
+    >
       <div className="feed">
-        {feed.map(({ title, description, image, date }, index) => (
+        {feed.map(({ title: feed_title, description, image, date }, index) => (
           <FeedItem
-            title={title}
+            title={feed_title}
             description={description}
             image={image}
             date={date}

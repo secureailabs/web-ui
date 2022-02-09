@@ -7,13 +7,21 @@
 @import 'components/card';
 @import 'components/cardForm';
 @import 'components/feed';
+@import 'components/footer';
 @import 'components/form';
+@import 'components/header';
+@import 'components/highlighted-value';
+@import 'components/image-background';
 @import 'components/input';
 @import 'components/modal';
 @import 'components/search-bar';
+@import 'components/standard-content';
+@import 'components/stat';
 @import 'components/sidebar';
 @import 'components/table';
 @import 'components/user-info';
 
 @import 'layout/page';
 @import 'layout/sidebar';
+@import 'layout/standard-grid-column';
+@import 'layout/standard-grid-row';
