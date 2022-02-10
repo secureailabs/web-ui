@@ -1,0 +1,9 @@
+.standard-grid-row {
+  width: 100%;
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-rows:
+    [header-start] 7rem
+    [header-end content-start] 1fr
+    [content-end footer-start] 4rem [footer-end];
+}

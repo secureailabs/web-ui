@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "ttsc && cp package.json dist && npm run build:css",
+    "build": "ttsc --project tsconfig.prod.json && cp package.json dist && npm run build:css",
     "compile:sass": "node-sass src/sass/main.scss dist/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.comp.css -o dist/css/style.prefix.css",
     "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
@@ -30,15 +30,10 @@
     "semantic-release": "semantic-release"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
+    "extends": ["react-app", "react-app/jest"],
     "overrides": [
       {
-        "files": [
-          "**/*.stories.*"
-        ],
+        "files": ["**/*.stories.*"],
         "rules": {
           "import/no-anonymous-default-export": "off"
         }
@@ -49,11 +44,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

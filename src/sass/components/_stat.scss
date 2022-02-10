@@ -1,0 +1,23 @@
+.stat {
+  padding: 2.1rem;
+  background-color: var(--color-whitish);
+  max-width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    margin-bottom: 1rem;
+  }
+}
