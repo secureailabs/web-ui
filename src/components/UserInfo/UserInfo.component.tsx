@@ -1,7 +1,5 @@
 import React from 'react';
 
-import default_user_image from '../../assets/user.png';
-
 import Text from '@components/Text';
 
 import type TUserInfo from './UserInfo.types';
@@ -9,7 +7,7 @@ import type TUserInfo from './UserInfo.types';
 const UserInfo: React.FC<TUserInfo> = ({
   username,
   organization,
-  profile_image = default_user_image,
+  profile_image,
 }) => {
   return (
     <div className="user-info">

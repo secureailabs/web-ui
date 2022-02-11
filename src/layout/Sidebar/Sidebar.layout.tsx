@@ -8,10 +8,11 @@ const SidebarLayout: React.FC<TSidebarLayout> = ({
   primary,
   secondary,
   children,
+  logo,
 }) => {
   return (
     <div className="sidebar-layout">
-      <Sidebar primary={primary} secondary={secondary} />
+      <Sidebar logo={logo} primary={primary} secondary={secondary} />
       {children}
     </div>
   );

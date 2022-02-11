@@ -1,12 +1,10 @@
 import React from 'react';
 
-import logo from '../../assets/logo.png';
-
 import SidebarLink from './SidebarLink';
 
 import type TSidebar from './Sidebar.types';
 
-const Sidebar: React.FC<TSidebar> = ({ primary, secondary }) => {
+const Sidebar: React.FC<TSidebar> = ({ primary, secondary, logo }) => {
   return (
     <div className="sidebar">
       <img src={logo} className="sidebar__logo" />
