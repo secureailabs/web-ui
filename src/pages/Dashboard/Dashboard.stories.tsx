@@ -37,6 +37,7 @@ import StandardContent from '@components/StandardContent';
 
 import { FaUsers } from 'react-icons/fa';
 import Footer from '@components/Footer';
+import Header from '@components/Header';
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docsM/react/configure/overview#configure-story-loading
