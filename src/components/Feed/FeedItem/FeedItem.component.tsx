@@ -1,7 +1,11 @@
 import React from 'react';
 
 import ReactTimeAgo from 'react-time-ago';
+import TimeAgo from 'javascript-time-ago';
 
+import en from 'javascript-time-ago/locale/en.json';
+TimeAgo.addLocale(en);
+TimeAgo.setDefaultLocale('en');
 import Text from '@components/Text';
 
 import type TFeed from './Feed.types';
@@ -10,6 +14,7 @@ const FeedItem: React.FC<TFeed> = ({ image, title, description, date }) => {
   return (
     <div className="feed-item">
       {image ? <img className="feed-item__image" src={image} /> : <></>}
+
       <div className="feed-item__content">
         <Text fontSize="12px" fontWeight={500}>
           {title}
