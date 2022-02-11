@@ -1,6 +1,6 @@
 import React from 'react';
 
-import default_user_image from '@assets/user.png';
+import default_user_image from '../../assets/user.png';
 
 import Text from '@components/Text';
 

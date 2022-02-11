@@ -7,7 +7,7 @@ import CardForm from '@components/CardForm';
 
 import Page from '@layout/Page';
 
-import SailLogo from '@assets/logo.png';
+import SailLogo from '../../assets/logo.png';
 import TCardForm from '@components/CardForm/CardForm.types';
 import Margin from '@components/Margin';
 import ImageBackground from '@components/ImageBackground';
