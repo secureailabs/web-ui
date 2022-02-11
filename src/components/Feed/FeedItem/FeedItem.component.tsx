@@ -1,11 +1,5 @@
 import React from 'react';
 
-import ReactTimeAgo from 'react-time-ago';
-import TimeAgo from 'javascript-time-ago';
-
-import en from 'javascript-time-ago/locale/en.json';
-TimeAgo.addLocale(en);
-TimeAgo.setDefaultLocale('en');
 import Text from '@components/Text';
 
 import type TFeed from './Feed.types';
@@ -29,7 +23,7 @@ const FeedItem: React.FC<TFeed> = ({ image, title, description, date }) => {
         fontSize="12px"
         fontWeight={500}
       >
-        <ReactTimeAgo locale="en-US" date={date} />
+        {date}
       </Text>
     </div>
   );
