@@ -67,9 +67,11 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
         }
       })}
       {children}
-      <Button full={true} button_type="primary" type="submit">
-        {button_text}
-      </Button>
+      {button_text && (
+        <Button full={true} button_type="primary" type="submit">
+          {button_text}
+        </Button>
+      )}
     </>
   );
 };

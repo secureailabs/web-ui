@@ -14,7 +14,7 @@ export type TFormFieldsRenderer = {
   register: UseFormRegister<any>;
   formState: FormState<any>;
   description?: string;
-  button_text: string;
+  button_text?: string;
 
   children?: ReactElement;
 
