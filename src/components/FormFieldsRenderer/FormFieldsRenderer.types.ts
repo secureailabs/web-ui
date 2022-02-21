@@ -5,9 +5,16 @@ export type TFormFieldsRenderer = {
   fields: Record<
     string,
     {
-      type: 'text' | 'password' | 'textarea' | 'number' | 'radio' | 'select';
-      label: string;
-      placeholder: string;
+      type?:
+        | 'text'
+        | 'password'
+        | 'textarea'
+        | 'number'
+        | 'radio'
+        | 'select'
+        | 'date';
+      label?: string;
+      placeholder?: string;
       errorMessage?: string;
     }
   >;

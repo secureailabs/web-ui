@@ -44,9 +44,12 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
             );
             break;
           }
+          case 'date':
+            return <input type="date" {...register(key)} />;
           case 'text':
           case 'password':
           case 'number':
+          default:
             return (
               <Input
                 {...register(key)}
@@ -56,7 +59,11 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
                     ? value.placeholder
                     : headerCase(key, { delimiter: ' ' })
                 }
-                label={value.label}
+                label={
+                  value.placeholder
+                    ? value.placeholder
+                    : headerCase(key, { delimiter: ' ' })
+                }
                 register={register}
                 type={value.type}
                 full={full || true}
