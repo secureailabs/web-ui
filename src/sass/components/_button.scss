@@ -7,6 +7,7 @@
   font-weight: 500;
   transition-duration: 0.5s;
   cursor: pointer;
+  max-width: 20rem;
   &--primary {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -24,6 +25,7 @@
     }
   }
   &--full {
+    max-width: 100%;
     width: 100%;
   }
 }
