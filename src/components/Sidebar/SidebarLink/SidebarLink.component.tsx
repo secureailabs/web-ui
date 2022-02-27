@@ -14,7 +14,10 @@ const SidebarLink: React.FC<TSidebarLink> = ({
 }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const selected = link === location.pathname;
+  let selected = false;
+  if (link) {
+    selected = !!link.match(`${location.pathname.replace('/', '\/')}(\/.*)?`);
+  }
   return (
     <div
       onClick={() => {
