@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SidebarLink from './SidebarLink';
 
 import type TSidebar from './Sidebar.types';
