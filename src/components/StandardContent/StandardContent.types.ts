@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 type StandardContent = {
   title: string;
   children: ReactElement;
-  HeaderButton: ReactElement;
+  HeaderButton?: ReactElement;
   back?: boolean;
 };
 

@@ -9,7 +9,7 @@ import Margin from '@components/Margin';
 const StandardContent: React.FC<TStandardContent> = ({
   title,
   children,
-  HeaderButton,
+  HeaderButton = <></>,
   back,
 }) => {
   const navigate = useNavigate();
