@@ -5,6 +5,7 @@ type TSidebarLink = {
   text: string;
   onClick?(): void;
   link?: string;
+  exact?: boolean;
 };
 
 export default TSidebarLink;

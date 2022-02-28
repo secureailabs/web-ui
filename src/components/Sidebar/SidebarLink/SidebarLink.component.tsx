@@ -11,12 +11,17 @@ const SidebarLink: React.FC<TSidebarLink> = ({
   Icon,
   onClick = () => {},
   link,
+  exact = false,
 }) => {
   const location = useLocation();
   const navigate = useNavigate();
   let selected = false;
-  if (link) {
-    selected = !!link.match(`${location.pathname.replace('/', '\/')}(\/.*)?`);
+  if (exact) {
+    selected = location.pathname === link;
+  } else if (link) {
+    selected = !!location.pathname.match(
+      `${link.replaceAll('/', '\\/')}(\\/.*)?`
+    );
   }
   return (
     <div
