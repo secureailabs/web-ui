@@ -12,15 +12,18 @@ const Feed: React.FC<TFeed> = ({ feed, title, secondary, containerHeight }) => {
       containerHeight={containerHeight}
     >
       <div className="feed">
-        {feed.map(({ title: feed_title, description, image, date }, index) => (
-          <FeedItem
-            title={feed_title}
-            description={description}
-            image={image}
-            date={date}
-            key={index}
-          />
-        ))}
+        {feed.map(
+          ({ title: feed_title, description, image, date, onClick }, index) => (
+            <FeedItem
+              title={feed_title}
+              description={description}
+              onClick={onClick}
+              image={image}
+              date={date}
+              key={index}
+            />
+          )
+        )}
       </div>
     </Card>
   );

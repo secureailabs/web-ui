@@ -34,6 +34,11 @@ import Feed from '@components/Feed';
 import GridLayout from 'react-grid-layout';
 
 import StandardContent from '@components/StandardContent';
+import TimeAgo from 'javascript-time-ago';
+
+import en from 'javascript-time-ago/locale/en.json';
+TimeAgo.addLocale(en);
+const timeAgo = new TimeAgo('en');
 
 import { FaUsers } from 'react-icons/fa';
 import Footer from '@components/Footer';
@@ -75,7 +80,7 @@ const feed1 = {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       image: feed_image1,
-      date: new Date(),
+      date: timeAgo.format(new Date()),
     },
     {
       title:
@@ -83,7 +88,7 @@ const feed1 = {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       image: feed_image2,
-      date: new Date(),
+      date: timeAgo.format(new Date()),
     },
   ],
 };
@@ -94,12 +99,12 @@ const feed2 = {
     {
       title: 'Lorem Ipsum',
       description: 'performs data updates on lorem ipsum',
-      date: new Date(),
+      date: timeAgo.format(new Date()),
     },
     {
       title: 'Lorem Ipsum',
       description: 'performs data updates on lorem ipsum',
-      date: new Date(),
+      date: timeAgo.format(new Date()),
     },
   ],
 };

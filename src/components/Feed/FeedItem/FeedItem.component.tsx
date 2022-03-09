@@ -4,9 +4,15 @@ import Text from '@components/Text';
 
 import type TFeed from './Feed.types';
 
-const FeedItem: React.FC<TFeed> = ({ image, title, description, date }) => {
+const FeedItem: React.FC<TFeed> = ({
+  image,
+  title,
+  description,
+  date,
+  onClick,
+}) => {
   return (
-    <div className="feed-item">
+    <div className="feed-item" onClick={onClick}>
       {image ? <img className="feed-item__image" src={image} /> : <></>}
 
       <div className="feed-item__content">
