@@ -4,6 +4,7 @@ type TFeed = {
   date: Date;
   onClick?: () => void;
   image?: string;
+  Avatar?: React.ReactElement;
 };
 
 export default TFeed;

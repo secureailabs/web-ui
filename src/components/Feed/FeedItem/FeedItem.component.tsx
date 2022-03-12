@@ -10,9 +10,11 @@ const FeedItem: React.FC<TFeed> = ({
   description,
   date,
   onClick,
+  Avatar,
 }) => {
   return (
     <div className="feed-item" onClick={onClick}>
+      {Avatar ? <Avatar className="feed-item__image" /> : <></>}
       {image ? <img className="feed-item__image" src={image} /> : <></>}
 
       <div className="feed-item__content">
