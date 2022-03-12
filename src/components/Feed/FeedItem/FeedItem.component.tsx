@@ -4,7 +4,8 @@ import Text from '@components/Text';
 
 import type TFeed from './Feed.types';
 
-import Avatar from 'react-avatar';
+import { Avatar } from 'react-profile-avatar';
+import 'react-profile-avatar/dist/index.css';
 
 const FeedItem: React.FC<TFeed> = ({
   image,
@@ -19,7 +20,7 @@ const FeedItem: React.FC<TFeed> = ({
     <div className="feed-item" onClick={onClick}>
       {avatar ? (
         <div className="feed-item__image">
-          <Avatar name={avatar} color={avatar_color || 'blue'} size="100%" />
+          <Avatar name={avatar} color={avatar_color} />
         </div>
       ) : (
         <></>

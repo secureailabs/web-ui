@@ -13674,6 +13674,11 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
+react-profile-avatar@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-profile-avatar/-/react-profile-avatar-1.0.0.tgz#913179c266af457db38f2c7440023a99df32d6b8"
+  integrity sha512-UH+qfVFhoO3cJlyonzyCFBWUInhyyzHrTk/otWPU47B0OwW6IeXrkyMb5pIw0ZxQDK4K2PuU4JENORQUBYhlsg==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
