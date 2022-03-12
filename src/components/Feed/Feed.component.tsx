@@ -14,7 +14,15 @@ const Feed: React.FC<TFeed> = ({ feed, title, secondary, containerHeight }) => {
       <div className="feed">
         {feed.map(
           (
-            { title: feed_title, description, image, date, onClick, Avatar },
+            {
+              title: feed_title,
+              description,
+              image,
+              date,
+              onClick,
+              avatar,
+              avatar_color,
+            },
             index
           ) => (
             <FeedItem
@@ -23,7 +31,8 @@ const Feed: React.FC<TFeed> = ({ feed, title, secondary, containerHeight }) => {
               onClick={onClick}
               image={image}
               date={date}
-              Avatar={Avatar}
+              avatar={avatar}
+              avatar_color={avatar_color}
               key={index}
             />
           )

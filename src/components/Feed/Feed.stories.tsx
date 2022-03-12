@@ -7,6 +7,8 @@ import Feed from './Feed.component';
 import Page from '@layout/Page';
 import TimeAgo from 'javascript-time-ago';
 
+import Avatar from 'react-avatar';
+
 import en from 'javascript-time-ago/locale/en.json';
 TimeAgo.addLocale(en);
 const timeAgo = new TimeAgo('en');
@@ -37,9 +39,8 @@ Primary.args = {
         'Vanderbilt University published a new version of the ‘KCA consortium data set',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      image:
-        'https://s3-alpha-sig.figma.com/img/e4e0/2d66/5630c7f439ab0a11ac159f91558b8c40?Expires=1644192000&Signature=VhYwT8WEaBRXI-ntqYxCAetkb1f~sls95ZNUgHSpfpbypOajo5-KksLjhr0yW-~~Bcm~GO8tneMB2GXgOckS0dZUJ6afINkotUY~1PXLLus9jhYFMV0doHMBLOXrwatxFYZfjgPI9lpVvKpm4MjLErN3yHtikyonw-QAup82uSZACgLRKFKyUQInVW4LfnHTOsxdhJkdfUkdFO1gvWR6TUHkf4zWiLuRMfAi-oUFFxyUe~pYFnyfTVfI3ofTFjYqHYtjsKFehLPVC4TIC~PM90mEwSL68t9a6SIeybfKMEwv3cOt1Dx0aGqsQDanHgi3L8xBEi0LVpvvo82URUwX0w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
       date: timeAgo.format(new Date()),
+      avatar: 'Adam Jasniewicz',
     },
     {
       title:
