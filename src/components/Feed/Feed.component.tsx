@@ -13,13 +13,17 @@ const Feed: React.FC<TFeed> = ({ feed, title, secondary, containerHeight }) => {
     >
       <div className="feed">
         {feed.map(
-          ({ title: feed_title, description, image, date, onClick }, index) => (
+          (
+            { title: feed_title, description, image, date, onClick, Avatar },
+            index
+          ) => (
             <FeedItem
               title={feed_title}
               description={description}
               onClick={onClick}
               image={image}
               date={date}
+              Avatar={Avatar}
               key={index}
             />
           )

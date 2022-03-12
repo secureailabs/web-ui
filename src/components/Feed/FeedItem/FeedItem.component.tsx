@@ -14,7 +14,7 @@ const FeedItem: React.FC<TFeed> = ({
 }) => {
   return (
     <div className="feed-item" onClick={onClick}>
-      {Avatar ? <Avatar className="feed-item__image" /> : <></>}
+      {Avatar ? { Avatar } : <></>}
       {image ? <img className="feed-item__image" src={image} /> : <></>}
 
       <div className="feed-item__content">
