@@ -20,7 +20,7 @@ const FeedItem: React.FC<TFeed> = ({
     <div className="feed-item" onClick={onClick}>
       {avatar ? (
         <div className="feed-item__image">
-          <Avatar name={avatar} color={avatar_color} />
+          <Avatar name={avatar} colour={avatar_color} />
         </div>
       ) : (
         <></>
