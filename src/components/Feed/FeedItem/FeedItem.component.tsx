@@ -25,7 +25,6 @@ const FeedItem: React.FC<TFeed> = ({
         <></>
       )}
       {image ? <img className="feed-item__image" src={image} /> : <></>}
-
       <div className="feed-item__content">
         <Text fontSize="12px" fontWeight={500}>
           {title}
