@@ -17,6 +17,7 @@
   }
 }
 .feed-item {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 1.4rem;
@@ -30,6 +31,8 @@
     object-fit: cover;
     border-radius: 4px;
     margin-right: 1.6rem;
+    overflow: hidden;
+  
   }
   &__content {
     padding-right: 3rem;

@@ -4,11 +4,27 @@ import Text from '@components/Text';
 
 import type TFeed from './Feed.types';
 
-const FeedItem: React.FC<TFeed> = ({ image, title, description, date }) => {
-  return (
-    <div className="feed-item">
-      {image ? <img className="feed-item__image" src={image} /> : <></>}
+import Avatar from 'react-avatar';
 
+const FeedItem: React.FC<TFeed> = ({
+  image,
+  title,
+  description,
+  date,
+  onClick,
+  avatar,
+  avatar_color,
+}) => {
+  return (
+    <div className="feed-item" onClick={onClick}>
+      {avatar ? (
+        <div className="feed-item__image">
+          <Avatar name={avatar} size="100%" color={avatar_color} />
+        </div>
+      ) : (
+        <></>
+      )}
+      {image ? <img className="feed-item__image" src={image} /> : <></>}
       <div className="feed-item__content">
         <Text fontSize="12px" fontWeight={500}>
           {title}
