@@ -50,7 +50,7 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
           }
           case 'image':
             return (
-              <>
+              <div>
                 {value.label ? (
                   <>
                     <Text fontWeight={500} fontSize="14px" lineHeight={5}>
@@ -61,7 +61,7 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
                 ) : (
                   <></>
                 )}
-              </>
+              </div>
             );
 
           case 'date':
