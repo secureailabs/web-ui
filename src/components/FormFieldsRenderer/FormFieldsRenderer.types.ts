@@ -8,10 +8,12 @@ export type TFormFieldsRenderer = {
       type?:
         | 'text'
         | 'password'
+        | 'image'
         | 'textarea'
         | 'number'
         | 'radio'
         | 'select'
+        | 'image'
         | 'date';
       label?: string;
       placeholder?: string;
