@@ -8,6 +8,8 @@ import Button from '@components/Button';
 
 import { headerCase } from 'change-case';
 
+import Text from '@components/Text';
+
 import Dropzone from '@components/Dropzone';
 
 const FormRenderer: React.FC<TFormFieldsRenderer> = ({
@@ -47,7 +49,21 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
             break;
           }
           case 'image':
-            return <Dropzone />;
+            return (
+              <>
+                {value.label ? (
+                  <>
+                    <Text fontWeight={500} fontSize="14px" lineHeight={5}>
+                      {value.label}
+                    </Text>
+                    <Dropzone />
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+
           case 'date':
             return <input type="date" {...register(key)} />;
           case 'text':
