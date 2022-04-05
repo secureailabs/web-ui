@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Text from '@components/Text';
-
 import type TTextarea from './Textarea.types';
 
 const Input: React.FC<TTextarea> = ({
