@@ -54,5 +54,5 @@ Simple.args = {
   close: () => {},
   title: 'Request Dataset Access',
   description:
-    "To request access to this dataset, eter the title of your research, for how long you'll need access to the data, and any comments regarding your request.",
+    "To request access to this dataset, enter the title of your research, for how long you'll need access to the data, and any comments regarding your request.",
 };
