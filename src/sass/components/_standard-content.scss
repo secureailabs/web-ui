@@ -1,6 +1,10 @@
 .standard-content {
   background-color: var(--color-whitish);
   padding: 4rem 5rem;
+  &--withback {
+    @extend .standard-content;
+    padding-top: 0;
+  }
   &__header {
     display: flex;
     justify-content: space-between;

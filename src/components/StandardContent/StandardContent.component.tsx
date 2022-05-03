@@ -15,7 +15,7 @@ const StandardContent: React.FC<TStandardContent> = ({
   const navigate = useNavigate();
 
   return (
-    <div className="standard-content">
+    <div className={'standard-content' + (back ? '{--withback}' : '')}>
       {back && (
         <div className="standard-content__back" onClick={() => navigate(-1)}>
           <div>&#8592;</div> <p>Back</p>
