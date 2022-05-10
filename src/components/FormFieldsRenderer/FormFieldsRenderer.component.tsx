@@ -1,5 +1,4 @@
 import React from 'react';
-import Select from 'react-select';
 
 import { TFormFieldsRenderer } from './FormFieldsRenderer.types';
 
@@ -16,7 +15,6 @@ import Dropzone from '@components/Dropzone';
 const FormRenderer: React.FC<TFormFieldsRenderer> = ({
   fields,
   register,
-  control,
   formState,
   full,
   description,
@@ -69,16 +67,6 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
           case 'date':
             return <input type="date" {...register(key)} />;
           case 'text':
-          case 'select':
-            return (
-              <Select
-                name={key}
-                label={value.label}
-                control={control}
-                values={value.values}
-                defaultInputValue={value.defaultInputValue}
-              />
-            );
           case 'password':
           case 'number':
           default:

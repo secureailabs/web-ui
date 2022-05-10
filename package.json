@@ -16,7 +16,6 @@
     "react-profile-avatar": "^1.0.0",
     "react-resizable": "^3.0.4",
     "react-scripts": "5.0.0",
-    "react-select": "^5.3.2",
     "react-table": "^7.7.0",
     "react-time-ago": "^7.1.7"
   },

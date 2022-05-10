@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Control, FormState, UseFormRegister } from 'react-hook-form';
+import { FieldValues, FormState, UseFormRegister } from 'react-hook-form';
 
 export type TFormFieldsRenderer = {
   fields: Record<
@@ -15,16 +15,12 @@ export type TFormFieldsRenderer = {
         | 'select'
         | 'image'
         | 'date';
-      values?: Array<string>;
-      defaultInputValue?: string;
       label?: string;
       placeholder?: string;
       errorMessage?: string;
     }
   >;
   register: UseFormRegister<any>;
-  // Control is only necessary when using a Select input
-  control?: Control;
   formState: FormState<any>;
   description?: string;
   button_text?: string;
