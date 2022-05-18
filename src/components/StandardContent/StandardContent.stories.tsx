@@ -20,6 +20,7 @@ export const Simple = Template.bind({});
 Simple.args = {
   children: <div>Test</div>,
   title: 'Dashboard',
+  back: true,
   HeaderButton: (
     <Button button_type="secondary" full={false}>
       Test
