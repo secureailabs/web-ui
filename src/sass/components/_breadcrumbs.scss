@@ -1,0 +1,18 @@
+.breadcrumbs {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    margin-left: 5rem;
+
+    font-size: 1.5rem;
+
+    color: var(--color-grey);
+
+    a {
+        color: var(--color-grey);
+        text-decoration: none;
+    }
+
+    .orange {
+        color: var(--color-primary);
+    }
+}
