@@ -8,7 +8,7 @@ const Breadcrumbs: React.FC<TBreadcrumbs> = ({ breadcrumbsData }) => {
   return (
     <div className="breadcrumbs">
       {breadcrumbsData.map(({ breadcrumb, match }, index) => (
-        <>
+        <React.Fragment key={index}>
           {index != 0 && <> / </>}
           <Link
             to={match.pathname}
@@ -18,7 +18,7 @@ const Breadcrumbs: React.FC<TBreadcrumbs> = ({ breadcrumbsData }) => {
           >
             {breadcrumb}
           </Link>
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
