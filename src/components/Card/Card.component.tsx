@@ -39,7 +39,7 @@ const Card: React.FC<TCard> = ({
       ) : (
         <></>
       )}
-      <div className="card__content">{children}</div>
+      {children && <div className="card__content">{children}</div>}
     </div>
   );
 };

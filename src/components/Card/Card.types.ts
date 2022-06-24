@@ -4,7 +4,7 @@ type TCard = {
   primaryText: string;
   secondaryText?: string;
   secondaryTextOnClick?(): void;
-  children: ReactElement;
+  children?: ReactElement;
   containerHeight?: boolean;
   widthMaxContent?: boolean;
 };
