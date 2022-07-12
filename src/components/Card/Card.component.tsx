@@ -8,7 +8,7 @@ const Card: React.FC<TCard> = ({
   children,
   primaryText,
   secondaryText,
-  secondaryTextOnClick = () => { },
+  secondaryTextOnClick = () => {},
   secondaryTextColor = 'primary',
   containerHeight,
   widthMaxContent,
