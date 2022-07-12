@@ -5,6 +5,7 @@ type TButton = {
   onClick?: () => void;
   full: boolean;
   height?: '3.6rem' | '5rem';
+  padded?: boolean;
 };
 
 export default TButton;

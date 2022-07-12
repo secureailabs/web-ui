@@ -1,5 +1,4 @@
 .button {
-  padding: 1.8rem 4.8rem;
   border: 1px solid var(--color-primary);
   border-radius: 4px;
   font-size: 12px;
@@ -28,5 +27,8 @@
   &--full {
     max-width: 100%;
     width: 100%;
+  }
+  &--padded {
+    padding: 0rem 4.8rem;
   }
 }
