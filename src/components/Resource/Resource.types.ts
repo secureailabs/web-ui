@@ -5,7 +5,8 @@ type TResource = {
   primaryText: string;
   secondaryText?: string;
   buttonText: string;
-  onClick: () => void;
+  buttonOnClick: () => void;
+  titleOnClick: () => void;
 };
 
 export default TResource;

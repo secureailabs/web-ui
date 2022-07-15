@@ -10,7 +10,8 @@ const Resource: React.FC<TResource> = ({
   primaryText,
   secondaryText,
   buttonText,
-  onClick,
+  buttonOnClick,
+  titleOnClick,
 }) => {
   return (
     <div className="resource">
@@ -22,6 +23,7 @@ const Resource: React.FC<TResource> = ({
         textAlign="center"
         fontWeight={600}
         fontSize="16px"
+        onClick={titleOnClick}
       >
         {primaryText}
       </Text>
@@ -36,7 +38,7 @@ const Resource: React.FC<TResource> = ({
         {secondaryText}
       </Text>
       <div className="resource__button">
-        <Button button_type="secondary" full={false} onClick={onClick}>
+        <Button button_type="secondary" full={false} onClick={buttonOnClick}>
           {buttonText}
         </Button>
       </div>
