@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactEventHandler, useState } from 'react';
+import React, { useState } from 'react';
 
 import type TSearchBar from './SearchBar.types';
 
