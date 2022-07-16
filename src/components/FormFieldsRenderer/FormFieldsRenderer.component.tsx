@@ -80,8 +80,8 @@ const FormRenderer: React.FC<TFormFieldsRenderer> = ({
                     : headerCase(key, { delimiter: ' ' })
                 }
                 label={
-                  value.placeholder
-                    ? value.placeholder
+                  value.label
+                    ? value.label
                     : headerCase(key, { delimiter: ' ' })
                 }
                 register={register}
