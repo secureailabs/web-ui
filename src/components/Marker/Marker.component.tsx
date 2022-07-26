@@ -4,7 +4,7 @@ import type TMarker from './Marker.types';
 
 const Marker: React.FC<TMarker> = ({
   children,
-  width = 'min-content',
+  width = 'max-content',
   // var(--color-primary) with 0.1 opacity
   background_color = 'rgba(243, 115, 35, 0.1)',
   text_color = 'var(--color-primary)',
