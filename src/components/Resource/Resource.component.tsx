@@ -10,11 +10,17 @@ const Resource: React.FC<TResource> = ({
   primaryText,
   secondaryText,
   buttonText,
-  buttonOnClick,
-  titleOnClick,
+  buttonOnClickUrl,
+  tileOnClick,
 }) => {
+  const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    location.href=buttonOnClickUrl;
+  }
+
+  const className = tileOnClick ? "resource resource__is-active" : 'resource';
   return (
-    <div className="resource">
+    <div className={className} onClick={tileOnClick}>
       <Icon className="resource__icon" />
       <Text
         className="resource__primary"
@@ -23,7 +29,6 @@ const Resource: React.FC<TResource> = ({
         textAlign="center"
         fontWeight={600}
         fontSize="16px"
-        onClick={titleOnClick}
       >
         {primaryText}
       </Text>
@@ -38,7 +43,7 @@ const Resource: React.FC<TResource> = ({
         {secondaryText}
       </Text>
       <div className="resource__button">
-        <Button button_type="secondary" full={false} onClick={buttonOnClick}>
+        <Button button_type="secondary" full={false} onClick={handleButtonClick}>
           {buttonText}
         </Button>
       </div>

@@ -30,6 +30,7 @@ Primary.args = {
   secondaryText:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
   buttonText: 'Download',
-  buttonOnClick: () => { },
-  titleOnClick: () => { },
+  buttonOnClickUrl: '#',
+  tileOnClick: () => {console.log('tileOnClick')},
+  // tileOnClick: null,
 };

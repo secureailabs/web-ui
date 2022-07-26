@@ -8,6 +8,11 @@
   width: 27rem;
   height: 27.3rem;
   padding: 3.3rem 3.5rem;
+  &__is-active {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   &__icon {
     height: 2.5rem;
