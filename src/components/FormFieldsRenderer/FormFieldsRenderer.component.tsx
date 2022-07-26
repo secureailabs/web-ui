@@ -15,7 +15,6 @@ import Dropzone from '@components/Dropzone';
 const FormRenderer: React.FC<TFormFieldsRenderer> = ({
   fields,
   register,
-  formState,
   full,
   description,
   children,

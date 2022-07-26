@@ -3,9 +3,9 @@
 @import 'base/base';
 @import 'base/utilities';
 
+@import 'components/breadcrumbs';
 @import 'components/button';
 @import 'components/card';
-@import 'components/resource';
 @import 'components/cardForm';
 @import 'components/feed';
 @import 'components/footer';
@@ -14,16 +14,16 @@
 @import 'components/highlighted-value';
 @import 'components/image-background';
 @import 'components/input';
+@import 'components/marker';
 @import 'components/modal';
+@import 'components/resource';
 @import 'components/search-bar';
+@import 'components/sidebar';
 @import 'components/standard-content';
 @import 'components/stat';
-@import 'components/table-filter';
-@import 'components/sidebar';
 @import 'components/table';
+@import 'components/table-filter';
 @import 'components/user-info';
-@import 'components/breadcrumbs';
-
 
 @import 'layout/page';
 @import 'layout/sidebar';
