@@ -19,7 +19,7 @@ const Resource: React.FC<TResource> = ({
   }
 
   let className = "resource";
-  className += tileOnClick ? " resource__is-active"  : "";
+  className += tileOnClick ? " resource__is-active" : "";
   className += buttonText ? "" : " resource__no-button";
   return (
     <div className={className} onClick={tileOnClick}>
