@@ -8,6 +8,9 @@
   width: 27rem;
   height: 27.3rem;
   padding: 3.3rem 3.5rem;
+  &__no-button {
+    height: 19rem;
+  }
   &__is-active {
     &:hover {
       cursor: pointer;

@@ -4,8 +4,8 @@ type TResource = {
   Icon: IconType;
   primaryText: string;
   secondaryText?: string;
-  buttonText: string;
-  buttonOnClickUrl: string;
+  buttonText?: string;
+  buttonOnClickUrl?: string;
   tileOnClick?: () => void;
 };
 
