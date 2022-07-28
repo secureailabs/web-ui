@@ -1,6 +1,8 @@
+import { ReactElement } from 'react';
+
 type TFeed = {
-  title: string;
-  description: string;
+  title: string | ReactElement;
+  description: string | ReactElement;
   date: Date;
   onClick?: () => void;
   image?: string;
